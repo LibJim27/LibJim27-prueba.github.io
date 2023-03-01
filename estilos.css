@@ -1,0 +1,71 @@
+/* Estilos para las cards */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+    
+}
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 20px;
+}
+h1{
+    text-align: center;
+  margin-top: 16px;
+}
+.card {
+    display: inline-block;
+      border: 1px solid black;
+      border-radius: 5px;
+      padding: 10px;
+      margin: 10px;
+      width: 250px;
+      height: 450px;
+      text-align: center;
+      position: relative;
+    cursor: pointer; 
+    opacity: 0.5;
+    transition: 0.5s;
+  }
+  
+  .card:hover {
+  transform: translateY(-4px);
+  background-color: rgb(122, 186, 122);
+    transform: translate(0);
+    opacity: 3;
+
+}
+
+  .card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .card h2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .card p {
+    margin: 5px;
+  }
+  
+  .buy-btn {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .added {
+    border: 2px solid green;
+  }
